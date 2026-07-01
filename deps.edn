@@ -1,4 +1,5 @@
 {:paths ["src"]
+ :version "0.1.0"
  ;; kotoba-lang/lsp — Layer 4 (tooling) of the kotoba foundational stdlib.
  ;; An LSP-style document model: positions, ranges, diagnostics as pure data.
  ;; No JSON-RPC transport baked in — the host supplies the wire. No third-party
