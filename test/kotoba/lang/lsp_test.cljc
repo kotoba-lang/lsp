@@ -47,5 +47,5 @@
     (is (= [d-err d-warn] (lsp/diagnostics-by-severity [d-warn d-err])))))
 
 (deftest diagnostic-rejects-invalid-severity
-  (is (thrown? clojure.lang.ExceptionInfo
+  (is (thrown? #?(:clj clojure.lang.ExceptionInfo :cljs js/Error)
                (lsp/diagnostic (lsp/range (lsp/position 0 0) (lsp/position 0 1)) :fatal "x" "y"))))
