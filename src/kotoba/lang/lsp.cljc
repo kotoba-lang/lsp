@@ -8,7 +8,7 @@
   this lib owns the data contract. Pure functions, no host.
 
   Zero third-party runtime deps; .cljc (JVM / SCI / CLJS / GraalVM / kotoba-WASM)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def severities #{:error :warning :information :hint})
 (def severity-rank {:error 1 :warning 2 :information 3 :hint 4})
