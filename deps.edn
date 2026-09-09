@@ -5,6 +5,31 @@
  ;; No JSON-RPC transport baked in — the host supplies the wire. No third-party
  ;; deps; .cljc. See ADR-kotoba-lang-foundational-stdlib.md.
  :deps {
+        io.github.kotoba-lang/lsp-diagnostic
+        {:git/url "https://github.com/kotoba-lang/lsp-diagnostic.git"
+         :git/sha "9f035efde5f9f2bc7ef97bc0e5231f6fc8eb880d"}
+        io.github.kotoba-lang/lsp-diagnostics-by-severity
+        {:git/url "https://github.com/kotoba-lang/lsp-diagnostics-by-severity.git"
+         :git/sha "c05cca41d5375e8419930daf3f3539a13ccb6017"}
+        io.github.kotoba-lang/lsp-offset-to-position
+        {:git/url "https://github.com/kotoba-lang/lsp-offset-to-position.git"
+         :git/sha "471a6798404657737c744b3df18f9adf7670ff1f"}
+        io.github.kotoba-lang/lsp-position
+        {:git/url "https://github.com/kotoba-lang/lsp-position.git"
+         :git/sha "ade93fc4e08bda10be3042e9aa0ba4dacb7d8b35"}
+        io.github.kotoba-lang/lsp-position-to-offset
+        {:git/url "https://github.com/kotoba-lang/lsp-position-to-offset.git"
+         :git/sha "4e556923c3643e74fd621ae2d2aa32ee6ffae634"}
+        io.github.kotoba-lang/lsp-range
+        {:git/url "https://github.com/kotoba-lang/lsp-range.git"
+         :git/sha "82497b1f29ff32fbce253d2e7b1739c82f38835f"}
+        io.github.kotoba-lang/lsp-text-document
+        {:git/url "https://github.com/kotoba-lang/lsp-text-document.git"
+         :git/sha "304627dab575fb3043d29f000cd098911be01b74"}
+        io.github.kotoba-lang/lsp-within-range
+        {:git/url "https://github.com/kotoba-lang/lsp-within-range.git"
+         :git/sha "d0d21afdd9978d2116244f011b9200706e869475"}
+
         ;; kotoba.lang.text, not clojure.string. Pinned as an explicit floor:
         ;; tools.deps takes the NEWEST sha it is shown, so without a floor here
         ;; this repo silently rides whatever a sibling happens to name.
