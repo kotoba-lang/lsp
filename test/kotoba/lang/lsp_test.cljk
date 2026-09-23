@@ -1,5 +1,5 @@
 (ns kotoba.lang.lsp-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [kotoba.lang.lsp :as lsp]))
 
 (deftest position-range-constructors
